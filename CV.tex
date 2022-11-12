@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage{fontawesome}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{green}
+\renewcommand{\familydefault}{\sfdefault} 
+\nopagenumbers{}
+\hyphenpenalty=1000
+
+
+% adjust the page margins
+\usepackage[scale=.75,top=2cm, bottom=1cm]{geometry}
+
+
+% personal data
+\name{Lyndon}{White}
+\photo[64pt][0.4pt]{portrait}
+\title{Curriculum Vitae}
+\email{lyndon.white@ucc.asn.au}
+\homepage{white.ucc.asn.au}
+\social[linkedin]{lyndon-white-46b9a035}
+\social[github]{oxinabox}
+\extrainfo{%
+	\httplink[\faStackOverflow{} lyndon-white]{stackoverflow.com/users/179081/lyndon-white}%
+}
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+%\section{Short Biography}
+%Lyndon White is a PhD candidate with the School of Electrical, Electronic, and Computer Engineering at the University of Western Australia.
+%His primary research area is in natural language processing, via machine learning.
+%More broadly his research interests include machine learning, data mining, pattern recognition and artificial intelligence.
+%
+%He is heavily involved with the Julia open-source community.
+%He is the primary author of numerous packages,
+%and has contributed to a great many others, and to the language itself.
+%He is currently one of core developers of the TensorFlow.jl package.
+
+
+
+
+\section{Education}
+%\cventry{years}{Job}{Employer}{opt}{opt}{opt}
+\cventry{2015--2018*}{PhD Candidature}{The University of Western Australia}{}{}{*Anticipated thesis submission in September 2018}
+\cventry{2009--2014}{Bachelor of Engineering, with Honours}{The University of Western Australia}{(Electrical and Electronic)}{}{}
+\cventry{2009--2014}{Bachelor of Computer and Mathematical Sciences}{The University of Western Australia}{(Pure Mathematics, Computation)}{}{}
+
+\section{Work Experience}
+\cventry{2014--}{Research and Teaching Assistant}{The University of Western Australia}{(Casual)}{}{}
+\cventry{2011}{Agile Platforms Developer}{Bankwest}{(8 month full-time)}{Australian Computing Society Workplace Integrated Learning Scholarship}{}
+
+\section{Awards}
+\cvitem{Best Student Paper Award CICLing 2016}{Generating Bags of Words from the Sums of their Word Embeddings, Lyndon White, Roberto Togneri, Wei Liu, and Mohammed Bennamoun.	(Conference on Intelligent Text Processing and Computational Linguistics)}
+
+
+
+\section{Organisations}
+\cventry{2016--}{Administrator of the Board}{Western Australian Science Fiction Foundation}{}{}{}
+\cventry{2015--\raisebox{0.9pt}{$\infty$}}{Honarary Life Member}{Unigames}{(UWA Student Society)}{}{}
+
+\section{Open Source}
+\cvitem{Creator}{of \emph{DataDeps.jl}, \emph{CorpusLoaders.jl}, and numerious other packages relating to replicatable natural language and data science research in julia.}
+\cvitem{Maintainer}{of \emph{TensorFlow.jl}, the julia binding for Google's very popular machine learning framework.}
+\cvitem{Contributor}{to a large number of open source packages in the julia ecosystem and beyond. Full list of open source contributions can be found at \url{https://github.com/oxinabox}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\nocite{white2018NRoNL}
+
+\nocite{Sharif2018NNEval}
+\nocite{White2018NovelPerspective}
+\nocite{Sharif2018LearningCompositeMetrics}
+\nocite{White2018RefittingSenses}
+\nocite{White2016SOWE2Sent}
+\nocite{White2016BOWgen}
+\nocite{White2015SentVecMeaning}
+\nocite{White2015TransistorPSO}
+
+\bibliographystyle{unsrt}
+\bibliography{publications} 
+
+
+
+
+\end{document}
+
+
+%% end of file `template.tex'.

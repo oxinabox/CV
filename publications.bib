@@ -1,0 +1,206 @@
+% Encoding: windows-1252
+
+@InProceedings{White2015TransistorPSO,
+  author    = {Lyndon White and Lyndon While and Ben Deeks and Farid Boussaid},
+  title     = {Transistor Sizing Using Particle Swarm Optimisation},
+  booktitle = {IEEE Symposium Series on Computational Intelligence},
+  year      = {2015},
+  month     = {Dec},
+  pages     = {259-266},
+  doi       = {10.1109/SSCI.2015.46},
+  abstract  = {We describe an application of particle swarm optimisation to the problem of determining the optimal sizing of transistors in an integrated circuit. The algorithm minimises the total area of silicon utilised by a given circuit, whilst maintaining the propagation delay of the circuit within a hard limit. It assesses designs using the well-known circuit simulation engine SPICE, making allowance for the inability of SPICE to assess poorly-designed circuits within a reasonable timeframe. Experiments on three different types of circuits demonstrate that the algorithm is able to derive excellent designs for a range of problem instances, including several problems where the Monte Carlo method is unable to find any feasible solutions at all.},
+  keywords  = {MOSFET;Monte Carlo methods;elemental semiconductors;particle swarm optimisation;silicon;Monte Carlo method;Si;circuit simulation engine SPICE;integrated circuit;optimal transistor sizing;particle swarm optimisation;propagation delay;silicon;Algorithm design and analysis;Birds;Integrated circuit modeling;Optimization;Propagation delay;SPICE;Transistors},
+  owner     = {20361362},
+  timestamp = {2017.05.03},
+}
+
+@InProceedings{White2015SentVecMeaning,
+  author    = {White, Lyndon and Togneri, Roberto and Liu, Wei and Bennamoun, Mohammed},
+  title     = {How Well Sentence Embeddings Capture Meaning},
+  booktitle = {Proceedings of the 20th Australasian Document Computing Symposium},
+  year      = {2015},
+  series    = {ADCS '15},
+  publisher = {ACM},
+  location  = {Parramatta, NSW, Australia},
+  isbn      = {978-1-4503-4040-3},
+  pages     = {9:1--9:8},
+  doi       = {10.1145/2838931.2838932},
+  url       = {http://doi.acm.org/10.1145/2838931.2838932},
+  abstract  = {Several approaches for embedding a sentence into a vector space have been developed. However, it is unclear to what extent the sentence's position in the vector space reflects its semantic meaning, rather than other factors such as syntactic structure. Depending on the model used for the embeddings this will vary -- different models are suited for different down-stream applications. For applications such as machine translation and automated summarization, it is highly desirable to have semantic meaning encoded in the embedding. We consider this to be the quality of semantic localization for the model -- how well the sentences' meanings coincides with their embedding's position in vector space. Currently the semantic localization is assessed indirectly through practical benchmarks for specific applications. 
+
+In this paper, we ground the semantic localization problem through a semantic classification task. The task is to classify sentences according to their meaning. A SVM with a linear kernel is used to perform the classification using the sentence vectors as its input. The sentences from subsets of two corpora, the Microsoft Research Paraphrase corpus and the Opinosis corpus, were partitioned according to their semantic equivalence. These partitions give the target classes for the classification task. Several existing models, including URAE, PV--DM and PV--DBOW, were assessed against a bag of words benchmark},
+  acmid     = {2838932},
+  articleno = {9},
+  keywords  = {Semantic vector space representations, semantic consistency evaluation, sentence embeddings, word embeddings},
+  numpages  = {8},
+  owner     = {20361362},
+  timestamp = {2015.11.19},
+}
+
+@InProceedings{White2016BOWgen,
+  author    = {White, Lyndon and Togneri,Roberto and Liu,Wei and Bennamoun, Mohammed},
+  title     = {Generating Bags of Words from the Sums of their Word Embeddings},
+  booktitle = {17th International Conference on Intelligent Text Processing and Computational Linguistics (CICLing)},
+  year      = {2016},
+  abstract  = {Many methods have been proposed to generate sentence vector representations, such as recursive neural networks, latent distributed memory models, and the simple sum of word embeddings (SOWE). However, very few methods demonstrate the ability to reverse the process -- recovering sentences from sentence embeddings. Amongst the many sentence embeddings, SOWE has been shown to maintain semantic meaning, so in this paper we introduce a method for moving from the SOWE representations back to the bag of words (BOW) for the original sentences. This is a part way step towards recovering the whole sentence and has useful theoretical and practical applications of its own. This is done using a greedy algorithm to convert the vector to a bag of words. To our knowledge this is the first such work. It demonstrates qualitatively the ability to recreate the words from a large corpus based on its sentence embeddings.
+
+As well as practical applications for allowing classical information retrieval methods to be combined with more recent methods using the sums of word embeddings, the success of this method has theoretical implications on the degree of information maintained by the sum of embeddings representation. This lends some credence to the consideration of the SOWE as a dimensionality reduced, and meaning enhanced, data manifold for the bag of words. },
+  timestamp = {2013.08.15},
+}
+
+@InProceedings{White2016SOWE2Sent,
+  author    = {White, Lyndon and Togneri,Roberto and Liu,Wei and Bennamoun, Mohammed},
+  title     = {Modelling Sentence Generation from Sum of Word Embedding Vectors as a Mixed Integer Programming Problem},
+  booktitle = {IEEE International Conference on Data Mining: High Dimensional Data Mining Workshop (ICDM: HDM)},
+  year      = {2016},
+  doi       = {10.1109/ICDMW.2016.0113},
+  url       = {http://white.ucc.asn.au/publications/White2016SOWE2Sent.pdf},
+  abstract  = {Converting a sentence to a meaningful vector representation
+has uses in many NLP tasks, however very few methods allow that
+representation to be restored to a human readable sentence. Being able
+to generate sentences from the vector representations demonstrates the
+level of information maintained by the embedding representation – in this
+case a simple sum of word embeddings. We introduce such a method
+for moving from this vector representation back to the original sentences.
+This is done using a two stage process; first a greedy algorithm is utilised
+to convert the vector to a bag of words, and second a simple probabilistic
+language model is used to order the words to get back the sentence.
+To the best of our knowledge this is the first work to demonstrate
+quantitatively the ability to reproduce text from a large corpus based
+directly on its sentence embeddings},
+  owner     = {20361362},
+  timestamp = {2017.02.28},
+}
+
+@Article{White2018RefittingSenses,
+  author   = {White, Lyndon and Togneri,Roberto and Liu,Wei and Bennamoun, Mohammed},
+  title    = {Finding Word Sense Embeddings Of Known Meaning},
+  journal  = {19th International Conference on Intelligent Text Processing and Computational Linguistics (CICLing)},
+  year     = {2018},
+  abstract = {Word sense embeddings are vector representations of polysemous words -- words with multiple meanings.
+These induced sense embeddings, however, do not necessarily correspond to any dictionary senses of the word.
+This limits their applicability in traditional semantic-orientated tasks such as lexical word sense disambiguation.
+To overcome this, we propose a method to find new sense embeddings of known meaning.
+We term this method refitting, as the new embedding is fitted to model the meaning of a target word in the example sentence.
+This is accomplished using the probabilities of the existing induced sense embeddings, as well as their vector values.
+Our contributions are threefold:
+(1) The refitting method to find the new sense embeddings;
+ (2) a novel smoothing technique, for use with the refitting method;
+and (3) a new similarity measure for words in context, defined by using the refitted sense embeddings.
+We show how our techniques improve the performance of the Adaptive Skip-Gram sense embeddings for word similarly evaluation; and how they allow the embeddings to be used for lexical word sense disambiguation -- which was not possible using the induced sense embeddings.},
+}
+
+@InProceedings{Sharif2018LearningCompositeMetrics,
+  author    = {Sharif, Naeha and White, Lyndon and and Bennamoun, Mohammed and Shah, Syed Afaq Ali},
+  title     = {Learning-based Composite Metrics for Improved Caption Evaluation},
+  booktitle = {Proceedings of the ACL Student Research Workshop},
+  year      = {2018},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://white.ucc.asn.au/publications/Sharif2018LearningCompositeMetrics.pdf},
+  abstract  = {The evaluation of image caption quality is a challenging task, which requires the assessment of two main aspects in a caption: adequacy and fluency.
+  These quality aspects can be judged using a combination of several linguistic features.
+  However, most of the current image captioning metrics focus only on specific linguistic facets,
+  such as the lexical or semantic, and fail to meet a satisfactory level of correlation with human judgements at the sentence-level.
+ We propose a learning-based framework to incorporate the scores of a set of lexical and semantic metrics as features,
+ to capture the adequacy and fluency of captions at different linguistic levels.
+ Our experimental results demonstrate that composite metrics draw upon the strengths of standalone measures to yield improved correlation and accuracy.
+},
+  owner     = {20361362},
+  timestamp = {2018.06.15},
+}
+
+
+
+@InProceedings{White2018NovelPerspective,
+  author    = {White, Lyndon and Togneri,Roberto and Liu,Wei and Bennamoun, Mohammed},
+  title     = {NovelPerspective: Identifying Point of View Characters},
+  booktitle = {Proceedings of ACL 2018, System Demonstrations},
+  year      = {2018},
+  publisher = {Association for Computational Linguistics},
+  abstract  = {We present NovelPerspective: a tool to allow consumers to subset their digital literature, based on point of view (POV) character.
+Many novels have multiple main characters each with their own storyline running in parallel.
+A well-known example is George R. R. Martin's  novel: ``A Game of Thrones'', and others from that series.
+Our tool detects the main character that each section is from the POV of,
+and allows the user to generate a new ebook with only those sections.
+This gives consumers new options in how they consume their media; allowing them to  pursue the storylines sequentially, or skip chapters about characters they find boring.
+We present two heuristic-based baselines, and two machine learning based methods for the detection of the main character.},
+  owner     = {20361362},
+  timestamp = {2018.06.15},
+}
+
+@Book{white2018NRoNL,
+  author    = {White, Lyndon and Togneri,Roberto and Liu,Wei and Bennamoun, Mohammed},
+  title     = {Neural Representations of Natural Language},
+  year      = {2018},
+  series    = {Studies in Computational Intelligence (Book)},
+  publisher = {Springer Singapore},
+  isbn      = {9789811300615},
+  url       = {https://www.springer.com/us/book/9789811300615},
+  owner     = {20361362},
+  timestamp = {2018.06.15},
+}
+
+@InProceedings{Sharif2018NNEval,
+  author    = {Sharif, Naeha and White, Lyndon and Bennamoun, Mohammed and Shah, Syed Afaq Ali},
+  title     = {NNEval: Neural Network based Evaluation Metric},
+  booktitle = {Proceedings of the 15th European Conference on Computer Vision},
+  year      = {2018},
+  publisher = {Springer Lecture Notes in Computer Science},
+  url       = {https://white.ucc.asn.au/publications/Sharif2018NNEval.pdf},
+  owner     = {20361362},
+  timestamp = {2018.07.16},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:to_read\;0\;1\;\;\;\;;
+1 StaticGroup:KeyPapers\;0\;1\;\;\;\;;
+1 StaticGroup:Automatically created groups\;2\;1\;\;\;\;;
+2 KeywordGroup:Amr\;0\;keywords\;Amr\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Competition\;0\;keywords\;Competition\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Computational complexity\\\;learning (artificial intelligence)\\\;neural nets\\\;speech recognition\\\;4-gram model\\\;computational complexity\\\;english broadcast news speech recognition task\\\;hash-based implementation\\\;large scale neural network language model training\\\;maximum entropy model\\\;training data\\\;word error rate\\\;artificial neural networks\\\;computational complexity\\\;computational modeling\\\;data models\\\;entropy\\\;training\\\;training data\;0\;keywords\;Computational complexity\\\;learning (artificial intelligence)\\\;neural nets\\\;speech recognition\\\;4-gram model\\\;computational complexity\\\;english broadcast news speech recognition task\\\;hash-based implementation\\\;large scale neural network language model training\\\;maximum entropy model\\\;training data\\\;word error rate\\\;artificial neural networks\\\;computational complexity\\\;computational modeling\\\;data models\\\;entropy\\\;training\\\;training data\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Computer vision\\\;estimation theory\\\;image segmentation\\\;nonparametric statistics\\\;pattern clustering\\\;smoothing methods\\\;nadaraya-watson estimator\\\;algorithm performance\\\;analysis resolution\\\;arbitrarily shaped cluster delineation\\\;color images\\\;complex multimodal feature space\\\;computational module\\\;convergence\\\;density function\\\;density modes detection\\\;discontinuity-preserving image smoothing\\\;discrete data\\\;gray-level images\\\;image segmentation\\\;kernel regression\\\;location estimation\\\;low-level vision algorithms\\\;mean shift\\\;nearest stationary point\\\;nonparametric technique\\\;pattern recognition procedure\\\;recursive mean shift procedure\\\;robust m-estimators\\\;robust feature space analysis\\\;user-set parameter\\\;convergence\\\;density functional theory\\\;image analysis\\\;image color analysis\\\;image resolution\\\;image segmentation\\\;kernel\\\;pattern recognition\\\;robustness\\\;smoothing methods\;0\;keywords\;Computer vision\\\;estimation theory\\\;image segmentation\\\;nonparametric statistics\\\;pattern clustering\\\;smoothing methods\\\;nadaraya-watson estimator\\\;algorithm performance\\\;analysis resolution\\\;arbitrarily shaped cluster delineation\\\;color images\\\;complex multimodal feature space\\\;computational module\\\;convergence\\\;density function\\\;density modes detection\\\;discontinuity-preserving image smoothing\\\;discrete data\\\;gray-level images\\\;image segmentation\\\;kernel regression\\\;location estimation\\\;low-level vision algorithms\\\;mean shift\\\;nearest stationary point\\\;nonparametric technique\\\;pattern recognition procedure\\\;recursive mean shift procedure\\\;robust m-estimators\\\;robust feature space analysis\\\;user-set parameter\\\;convergence\\\;density functional theory\\\;image analysis\\\;image color analysis\\\;image resolution\\\;image segmentation\\\;kernel\\\;pattern recognition\\\;robustness\\\;smoothing methods\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Corpora\;0\;keywords\;Corpora\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Dataset\;0\;keywords\;Dataset\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Delay effects\\\;delay systems\\\;filtering\\\;gaussian noise\\\;nonlinear equations\\\;nonlinear systems\\\;riccati equations\\\;robustness\\\;sufficient conditions\\\;uncertain systems\;0\;keywords\;Delay effects\\\;delay systems\\\;filtering\\\;gaussian noise\\\;nonlinear equations\\\;nonlinear systems\\\;riccati equations\\\;robustness\\\;sufficient conditions\\\;uncertain systems\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Discrete-time systems\;0\;keywords\;Discrete-time systems\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Embeddings\;0\;keywords\;Embeddings\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Entity linking\;0\;keywords\;Entity linking\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Filtering\;0\;keywords\;Filtering\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Gaussian processes\\\;acoustic signal processing\\\;hidden markov models\\\;mixture models\\\;neural nets\\\;speech recognition\\\;asr\\\;dnn\\\;gmm\\\;gaussian mixture models\\\;hmm\\\;acoustic features\\\;acoustic modeling\\\;acoustic models\\\;automatic speech recognition\\\;burgeoning area\\\;deep learning\\\;deep neural networks\\\;hidden markov models\\\;high-level symbolic inputs\\\;human speech production\\\;intermediate acoustic feature sequences\\\;low-level speech waveforms\\\;parametric speech generation\\\;statistical parametric approach\\\;acoustic signal detection\\\;gaussian mixture models\\\;hidden markov models\\\;speech processing\\\;speech recognition\\\;speech synthesis\\\;vocoders\;0\;keywords\;Gaussian processes\\\;acoustic signal processing\\\;hidden markov models\\\;mixture models\\\;neural nets\\\;speech recognition\\\;asr\\\;dnn\\\;gmm\\\;gaussian mixture models\\\;hmm\\\;acoustic features\\\;acoustic modeling\\\;acoustic models\\\;automatic speech recognition\\\;burgeoning area\\\;deep learning\\\;deep neural networks\\\;hidden markov models\\\;high-level symbolic inputs\\\;human speech production\\\;intermediate acoustic feature sequences\\\;low-level speech waveforms\\\;parametric speech generation\\\;statistical parametric approach\\\;acoustic signal detection\\\;gaussian mixture models\\\;hidden markov models\\\;speech processing\\\;speech recognition\\\;speech synthesis\\\;vocoders\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Hidden markov models\\\;speech processing\\\;baseline system\\\;extractive speech summarization\\\;nongenerative probabilistic framework\\\;rhetorical information\\\;rhetorical-state hidden markov models\\\;automatic speech recognition\\\;data mining\\\;decoding\\\;feature extraction\\\;hidden markov models\\\;humans\\\;natural languages\\\;support vector machine classification\\\;support vector machines\\\;text recognition\\\;hidden markov models\\\;rhetorical information\\\;speech features\\\;spoken document summarization\;0\;keywords\;Hidden markov models\\\;speech processing\\\;baseline system\\\;extractive speech summarization\\\;nongenerative probabilistic framework\\\;rhetorical information\\\;rhetorical-state hidden markov models\\\;automatic speech recognition\\\;data mining\\\;decoding\\\;feature extraction\\\;hidden markov models\\\;humans\\\;natural languages\\\;support vector machine classification\\\;support vector machines\\\;text recognition\\\;hidden markov models\\\;rhetorical information\\\;speech features\\\;spoken document summarization\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:H8 filtering\;0\;keywords\;H8 filtering\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:H8 optimisation\\\;kalman filters\\\;riccati equations\\\;difference equations\\\;discrete time filters\\\;error analysis\\\;filtering theory\\\;game theory\\\;noise\\\;parameter estimation\\\;signal processing\\\;kalman filter\\\;amplification\\\;difference riccati equation\\\;discrete h8 filter design\\\;estimation error signals\\\;exogenous inputs\\\;finite energy signals\\\;finite-horizon discrete h8 filter\\\;game theory\\\;hostile noise signals\\\;linear quadratic game\\\;modified wiener filter\\\;system initial condition\\\;unknown statistics\\\;estimation error\\\;filtering theory\\\;game theory\\\;h infinity control\\\;noise measurement\\\;nonlinear filters\\\;riccati equations\\\;signal design\\\;signal processing\\\;statistics\;0\;keywords\;H8 optimisation\\\;kalman filters\\\;riccati equations\\\;difference equations\\\;discrete time filters\\\;error analysis\\\;filtering theory\\\;game theory\\\;noise\\\;parameter estimation\\\;signal processing\\\;kalman filter\\\;amplification\\\;difference riccati equation\\\;discrete h8 filter design\\\;estimation error signals\\\;exogenous inputs\\\;finite energy signals\\\;finite-horizon discrete h8 filter\\\;game theory\\\;hostile noise signals\\\;linear quadratic game\\\;modified wiener filter\\\;system initial condition\\\;unknown statistics\\\;estimation error\\\;filtering theory\\\;game theory\\\;h infinity control\\\;noise measurement\\\;nonlinear filters\\\;riccati equations\\\;signal design\\\;signal processing\\\;statistics\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Information extraction\;0\;keywords\;Information extraction\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Machine learning\\\; reasoning\\\; recursive networks\;0\;keywords\;Machine learning\\\; reasoning\\\; recursive networks\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Markov processes\\\;speech recognition\\\;balls-in-urns system\\\;coin-tossing\\\;discrete markov chains\\\;ergodic models\\\;hidden markov models\\\;hidden states\\\;left-right models\\\;probabilistic function\\\;speech recognition\\\;distortion\\\;hidden markov models\\\;mathematical model\\\;multiple signal classification\\\;signal processing\\\;speech recognition\\\;statistical analysis\\\;stochastic processes\\\;temperature measurement\\\;tutorial\;0\;keywords\;Markov processes\\\;speech recognition\\\;balls-in-urns system\\\;coin-tossing\\\;discrete markov chains\\\;ergodic models\\\;hidden markov models\\\;hidden states\\\;left-right models\\\;probabilistic function\\\;speech recognition\\\;distortion\\\;hidden markov models\\\;mathematical model\\\;multiple signal classification\\\;signal processing\\\;speech recognition\\\;statistical analysis\\\;stochastic processes\\\;temperature measurement\\\;tutorial\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Max-entropy\;0\;keywords\;Max-entropy\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Mt\;0\;keywords\;Mt\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Named entity recognition\;0\;keywords\;Named entity recognition\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Nlp\;0\;keywords\;Nlp\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Nonlinear systems\;0\;keywords\;Nonlinear systems\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Optimisation\;0\;keywords\;Optimisation\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Paraphrasing\;0\;keywords\;Paraphrasing\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Phrase-embeddings\;0\;keywords\;Phrase-embeddings\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Rae\;0\;keywords\;Rae\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Rcm\;0\;keywords\;Rcm\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Rnn\;0\;keywords\;Rnn\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Robust filtering\;0\;keywords\;Robust filtering\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Rvnn\;0\;keywords\;Rvnn\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Sentiment analysis\\\; product review\\\; neural network language model\\\; semi-supervised learning\;0\;keywords\;Sentiment analysis\\\; product review\\\; neural network language model\\\; semi-supervised learning\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Software\;0\;keywords\;Software\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Summarization\;0\;keywords\;Summarization\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Terminology\;0\;keywords\;Terminology\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Tools\;0\;keywords\;Tools\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Uncertain systems\;0\;keywords\;Uncertain systems\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Urae\;0\;keywords\;Urae\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Word-embeddings\;0\;keywords\;Word-embeddings\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Word-sense-disambiguation\;0\;keywords\;Word-sense-disambiguation\;0\;0\;1\;\;\;\;;
+2 KeywordGroup:Wordnet\;0\;keywords\;Wordnet\;0\;0\;1\;\;\;\;;
+}
+
+@Comment{jabref-meta: groupsversion:
+3;
+}
