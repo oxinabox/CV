@@ -10,6 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: CV.tex
+          latexmk_use_lualatex: true
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Regenerate PDF
