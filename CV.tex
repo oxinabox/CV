@@ -13,42 +13,64 @@
 
 
 % personal data
-\name{Lyndon}{White}
+\name{Frames}{White}
 \photo[64pt][0.4pt]{portrait}
 \title{Curriculum Vitae}
-\email{lyndon.white@ucc.asn.au}
-\homepage{white.ucc.asn.au}
-\social[linkedin]{lyndon-white-46b9a035}
+\email{oxinabox@ucc.asn.au}
+\homepage{oxinabox.ucc.asn.au}
+\social[linkedin]{frames-catherine-white-46b9a035/}
 \social[github]{oxinabox}
 \extrainfo{%
-	\httplink[\faStackOverflow{} lyndon-white]{stackoverflow.com/users/179081/lyndon-white}%
+	\httplink[\faStackOverflow{} frames-white]{stackoverflow.com/users/179081/}%
 }
 
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+% -------------------------------------------------
+% bibliography adjustements
 %   to show numerical labels in the bibliography (default is to show no labels)
 \makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
 %   to redefine the bibliography heading string ("Publications")
 %\renewcommand{\refname}{Articles}
+
+% https://tex.stackexchange.com/a/70946 + https://github.com/moderncv/moderncv/blob/d8bc48733c400ccc93f1b03b3eafe08d5b3220e6/moderncvbodyi.sty#L132
+\makeatletter
+\long\def\bibNote#1{\gdef\@bibNote{\item[]{\normalsize#1}}}
+\renewenvironment{thebibliography}[1]%
+  {%
+    \bibliographyhead{\refname}%
+    \begin{list}{\bibliographyitemlabel}%
+      {%
+        \setlength{\topsep}{0pt}%
+        \setlength{\labelwidth}{\hintscolumnwidth}%
+        \setlength{\labelsep}{\separatorcolumnwidth}%
+        \leftmargin\labelwidth%
+        \advance\leftmargin\labelsep%
+        \@openbib@code%
+        \usecounter{enumiv}%
+        \let\p@enumiv\@empty%
+        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+        \sloppy%
+        \clubpenalty4000%\@clubpenalty \clubpenalty%
+        \widowpenalty4000%
+        \sfcode`\.\@m%
+        \sfcode `\=1000\relax
+		\@bibNote\settowidth\labelwidth{\@biblabel{#1}}	
+	}%
+  {%
+    \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+    \end{list}}
+\makeatother
+\bibNote{Note: I used \textbf{Lyndon~White} as a pen-name up until February 2022. It thus appears as such in this section. I no longer use that name anywhere else.}
+
+%-----------------------------------------------
+
 
 
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-%\section{Short Biography}
-%Lyndon White is a PhD candidate with the School of Electrical, Electronic, and Computer Engineering at the University of Western Australia.
-%His primary research area is in natural language processing, via machine learning.
-%More broadly his research interests include machine learning, data mining, pattern recognition and artificial intelligence.
-%
-%He is heavily involved with the Julia open-source community.
-%He is the primary author of numerous packages,
-%and has contributed to a great many others, and to the language itself.
-%He is currently one of core developers of the TensorFlow.jl package.
-
-
 
 
 \section{Education}
@@ -57,18 +79,21 @@
 \cventry{2009--2014}{Bachelor of Engineering, with Honours}{The University of Western Australia}{(Electrical and Electronic)}{}{}
 \cventry{2009--2014}{Bachelor of Computer and Mathematical Sciences}{The University of Western Australia}{(Pure Mathematics, Computation)}{}{}
 
-\section{Work Experience}
+\section{Employment}
 \cventry{2014--}{Research and Teaching Assistant}{The University of Western Australia}{(Casual)}{}{}
 \cventry{2011}{Agile Platforms Developer}{Bankwest}{(8 month full-time)}{Australian Computing Society Workplace Integrated Learning Scholarship}{}
 
 \section{Awards}
-\cvitem{Best Student Paper Award CICLing 2016}{Generating Bags of Words from the Sums of their Word Embeddings, Lyndon White, Roberto Togneri, Wei Liu, and Mohammed Bennamoun.	(Conference on Intelligent Text Processing and Computational Linguistics)}
+\cvitem{2022 Julia Community Prize}{``For her many technical and community contributions across the Julia ecosystem.''}
+\cvitem{2021 Best Poster Award}{AbstractDifferentiation.jl: Backend-Agnostic Differentiable Programming in Julia, Frank Schäfer et al. (NeurIPS Differentiable Programming Workshop)}
+\cvitem{2020 DSTG Best Contribution to Science Award}{WEmbSim: A Simple yet Effective Metric for Image Captioning, Naeha Sharif et al. (International Conference on Digital Image Computing: Techniques and Applications)}
+\cvitem{2016 Best Student Paper Award}{Generating Bags of Words from the Sums of their Word Embeddings, White et al (Conference on Intelligent Text Processing and Computational Linguistics)}
 
 
 
 \section{Organisations}
-\cventry{2016--}{Administrator of the Board}{Western Australian Science Fiction Foundation}{}{}{}
-\cventry{2015--\raisebox{0.9pt}{$\infty$}}{Honarary Life Member}{Unigames}{(UWA Student Society)}{}{}
+\cventry{2016 April -- 2019 April}{Administrator of the Board}{Western Australian Science Fiction Foundation}{}{}{}
+\cventry{2015 March--\raisebox{0.9pt}{$\infty$}}{Honarary Life Member}{Unigames}{(UWA Student Society)}{}{}
 
 \section{Open Source}
 \cvitem{Creator}{of \emph{DataDeps.jl}, \emph{CorpusLoaders.jl}, and numerious other packages relating to replicatable natural language and data science research in julia.}
@@ -90,8 +115,10 @@
 \nocite{White2015SentVecMeaning}
 \nocite{White2015TransistorPSO}
 
+%Note: I used Lyndon~White as a penname up until February 2022. It thus appears as that in this section.
 \bibliographystyle{unsrt}
 \bibliography{publications} 
+
 
 
 
