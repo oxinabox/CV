@@ -6,7 +6,7 @@
 \renewcommand{\familydefault}{\sfdefault} 
 \nopagenumbers{}
 \hyphenpenalty=1000
-
+\sethintscolumntowidth{2016 April -- 2019 April}
 
 % adjust the page margins
 \usepackage[scale=.75,top=2cm, bottom=1cm]{geometry}
@@ -17,7 +17,7 @@
 \photo[64pt][0.4pt]{portrait}
 \title{Curriculum Vitae}
 \email{oxinabox@ucc.asn.au}
-\homepage{oxinabox.ucc.asn.au}
+\homepage{oxinabox.net}
 \social[linkedin]{frames-catherine-white-46b9a035/}
 \social[github]{oxinabox}
 \extrainfo{%
@@ -59,7 +59,7 @@
     \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
     \end{list}}
 \makeatother
-\bibNote{Note: I used \textbf{Lyndon~White} as a pen-name up until February 2022. It thus appears as such in this section. I no longer use that name anywhere else.}
+
 
 %-----------------------------------------------
 
@@ -69,19 +69,19 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 
 \section{Education}
-%\cventry{years}{Job}{Employer}{opt}{opt}{opt}
-\cventry{2015--2018*}{PhD Candidature}{The University of Western Australia}{}{}{*Anticipated thesis submission in September 2018}
-\cventry{2009--2014}{Bachelor of Engineering, with Honours}{The University of Western Australia}{(Electrical and Electronic)}{}{}
-\cventry{2009--2014}{Bachelor of Computer and Mathematical Sciences}{The University of Western Australia}{(Pure Mathematics, Computation)}{}{}
+%\cventry{years}{Job}{Employer}{localization}{grade}{description}
+\cventry{2015 March-- 2018 Oct}{PhD Candidature}{The University of Western Australia}{}{}{Thesis: ``On the surprising capacity of linear combinations of embeddings for natural language processing''. (Machine learning for natural language processing)}
+\cventry{2009--2014}{Bachelor of Engineering, with Honours}{The University of Western Australia}{}{}{(Majoring in Electrical and Electronic Engineering)}
+\cventry{2009--2014}{Bachelor of Computer and Mathematical Sciences}{The University of Western Australia}{}{}{(Double major in Pure Mathematics, and Computation)}
 
-\section{Employment}
-\cventry{2014--}{Research and Teaching Assistant}{The University of Western Australia}{(Casual)}{}{}
-\cventry{2011}{Agile Platforms Developer}{Bankwest}{(8 month full-time)}{Australian Computing Society Workplace Integrated Learning Scholarship}{}
+\section{Employment History}
+\cventry{2018 Oct -- Present}{Research Software Engineer}{Invenia Labs}{Cambridge, UK}{}{}
+\cventry{2014 Nov -- 2018 Oct}{Research and Teaching Assistant}{The University of Western Australia}{Perth, WA}{(Casual)}{}
+\cventry{2011 July -- 2012 March}{Agile Platforms Developer}{Bankwest}{Perth, WA}{Australian Computing Society Workplace Integrated Learning Scholarship}{}
 
 \section{Awards}
 \cvitem{2022 Julia Community Prize}{``For her many technical and community contributions across the Julia ecosystem.''}
@@ -93,7 +93,7 @@
 
 \section{Organisations}
 \cventry{2016 April -- 2019 April}{Administrator of the Board}{Western Australian Science Fiction Foundation}{}{}{}
-\cventry{2015 March--\raisebox{0.9pt}{$\infty$}}{Honarary Life Member}{Unigames}{(UWA Student Society)}{}{}
+\cventry{2015 March -- \raisebox{0.9pt}{$\infty$}}{Honarary Life Member}{Unigames}{(UWA Student Society)}{}{}
 
 \section{Open Source}
 \cvitem{Creator}{of \emph{DataDeps.jl}, \emph{CorpusLoaders.jl}, and numerious other packages relating to replicatable natural language and data science research in julia.}
@@ -104,26 +104,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
-\nocite{white2018NRoNL}
-
-\nocite{Sharif2018NNEval}
-\nocite{White2018NovelPerspective}
-\nocite{Sharif2018LearningCompositeMetrics}
-\nocite{White2018RefittingSenses}
-\nocite{White2016SOWE2Sent}
-\nocite{White2016BOWgen}
-\nocite{White2015SentVecMeaning}
-\nocite{White2015TransistorPSO}
-
-%Note: I used Lyndon~White as a penname up until February 2022. It thus appears as that in this section.
+\sethintscolumntowidth{[1234]}
+\small
+\nocite{*}
 \bibliographystyle{unsrt}
+\bibNote{Note: I used \textbf{Lyndon~White} as a pen-name up until February 2022. It thus appears as such in this section. I no longer use that name anywhere else.}
 \bibliography{publications} 
 
 
-
-
-
 \end{document}
-
-
-%% end of file `template.tex'.
